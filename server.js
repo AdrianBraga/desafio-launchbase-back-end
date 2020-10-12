@@ -9,11 +9,6 @@ const about = require('./date-about');
 // Variável armazenando a função express
 const server = express();
 
-// Criar as rotas
-server.get('/', function(req, res) {
-    return res.send('Servidor no Ar! Restartando com o nodemon!')
-})
-
 // Configurar os arquivos estático para o servidor(assents, css, js...)
 server.use(express.static('public'));
 
