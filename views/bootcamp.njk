@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{card.id}} | Rocketseat</title>
+    <link rel="stylesheet" href="/css/contents.css">
+{% endblock %}
+
+{% block content %}
+    <section id="bootcamp">
+        <div class="card__bootcamp-container">
+            <iframe src="https://app.rocketseat.com.br/dashboard/{{card.id}}" frameborder="0"></iframe>       
+        </div>    
+    </section>
+{% endblock %}

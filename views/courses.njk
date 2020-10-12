@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Conteúdos | Rocketseat</title>
+    <link rel="stylesheet" href="/css/contents.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="title-conteudos">
+            <h1>Conteúdos</h1>
+        </div>
+
+        <section class="cards-bootcamp">
+            {% for card in items %}
+                <div class="card-bootcamp" id="{{card.id}}">
+                    <div class="logo-bootcamp">
+                        <img src="/assets/images/logo-{{card.id}}.svg" alt="Logo {{card.id}}">
+                    </div>
+
+                    <div class="content-bootcamp">
+                        <p>{{card.description}}</p>
+                    </div>
+
+                    <div class="info-bootcamp">
+                        <p>{{card.modulo}}</p>
+                        <p class="price-bootcamp">{{card.price}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+
+    <script src="/js/scripts.js"></script>
+{% endblock %}
