@@ -1,0 +1,173 @@
+/* === MAIN === */
+
+main {
+    text-align: center;
+    color: var(--color-white);
+    padding: 30px;
+}
+
+.title-conteudos h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+/* === CARDS === */
+
+.cards-bootcamp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-bootcamp {
+    padding: 64px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.logo-bootcamp {
+    height: 145px;
+    margin: 105px 0px 55px;
+}
+
+.content-bootcamp p{
+    max-width: 270px;
+    text-align: center;
+    color: #87868b;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 55px;
+}
+
+.info-bootcamp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-bootcamp p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-bootcamp {
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+/*  === STARTER === */
+#starter:hover {
+    border: 2px solid var(--color-starter);
+}
+
+#starter strong.starter {
+    color: var(--color-starter);
+}
+#starter .price-bootcamp {
+    background-color: var(--color-starter);
+}
+
+/*  === LAUNCHBASE === */
+#launchbase:hover {
+    border: 2px solid var(--color-launch);
+}
+
+#launchbase  strong.launchbase {
+    color: var(--color-launch);
+}
+#launchbase  .price-bootcamp {
+    background-color: var(--color-launch);
+}
+
+/*  === GOSTACK === */
+#gostack:hover {
+    border: 2px solid var(--color-gostack);
+}
+
+#gostack strong.gostack-11 {
+    color: var(--color-gostack);
+}
+#gostack .price-bootcamp {
+    background-color: var(--color-gostack);
+}
+
+/* === MODAL-BOOTCAMP === */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-white);
+    position: relative;
+    margin: 10vh auto;
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal .max-modal {
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.modal span {
+    cursor: pointer;
+}
+
+
+/* === MODAL - OVERLAY.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.maximize {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    position: relative;
+    margin: 0;
+}
+
+
+/* === IFRAME === */
+
+/* iframe {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+} */
+
+/* === IFRAME PAGE BOOTCAMP */
+#bootcamp {
+    margin: 0 auto;
+}
+.card__bootcamp-container {
+    position: relative;
+}
+.card__bootcamp-container iframe {
+    width: 100%;
+    height: 90vh;
+}

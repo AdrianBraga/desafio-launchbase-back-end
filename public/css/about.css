@@ -1,0 +1,76 @@
+/* === MAIN === */
+
+main {
+    text-align: center;
+    color: var(--color-white);
+}
+
+.logo-main {
+    margin: 20px 0;
+}
+
+.logo-main img{
+    border-radius: 50%;
+    border: 2px solid var(--color-rocket);
+}
+
+.main-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.main-content h2 {
+    font-size: 22px;
+    line-height: 32px;
+    opacity: 0.8;
+}
+
+.main-content p {
+    max-width: 700px;
+    margin: 8px auto;
+    font-size: 18px;
+}
+
+/* === LISTA DE TECNOLOGIAS === */
+
+.list-tecnologias {
+    max-width: 500px;
+    margin: 5px auto;
+    border: 1px solid var(--color-rocket);
+}
+
+.list-tecnologias h3 {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 8px 4px;
+}
+
+.list-tecnologias ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.list-tecnologias ul li {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.list-tecnologias ul li[class="javascript"] {
+    color: #f7df1e;
+}
+
+.list-tecnologias ul li[class="react"] {
+    color: #61dafb;
+}
+
+.list-tecnologias ul li[class="typescript"] {
+    color: #007acc;
+}
+
+/* === FOOTER === */
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
